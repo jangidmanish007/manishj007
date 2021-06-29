@@ -884,7 +884,6 @@ header{
 
     /*hero section*/
     #hero {
-        -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,transparent,#0004);
         filter: drop-shadow( 5px 7px 26px black); 
     }
 
@@ -902,7 +901,7 @@ header{
       #services .services-item{
           flex-basis: 20%;
           margin: 1.5%;
-          -webkit-box-reflect: below 3px linear-gradient(transparent,transparent,transparent,#0004);
+          
       }
       #services .services-item h2{
           text-align: left;
@@ -1103,8 +1102,7 @@ header{
       }
 
       #hero {
-        -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,transparent,#0004);
-        filter: drop-shadow( 5px 7px 26px black); 
+            filter: drop-shadow( 5px 7px 26px black); 
     }
 
 
