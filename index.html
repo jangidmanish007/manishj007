@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
     <title>My First WebSite </title>
     <link rel="icon" href="2.jpeg">
+    <script src="https://kit.fontawesome.com/647087edec.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -112,40 +111,6 @@
     </section>
     <!-- End Service Section -->
 
-    <!-- project Section -->
-    <section id="projects">
-        <div class="projects container">
-            <div class="project-header">
-                <h1 class="section-title"><span>Re</span>cent <span>Pro</span>jects</h1>
-            </div>
-            <div class="all-projects">
-                <div class="project-items">
-                    <div class="project-info">
-                        <h1><a href="#">Project 1 </a></h1>
-                        <h2>Coding is Love </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget vehicula felis. Proin
-                            porta ullamcorper enim ac suscipit. Praesent libero magna, tempor sit amet justo semper,</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/img1.jpg" alt="img">
-                    </div>
-                </div>
-                <div class="project-items">
-                    <div class="project-info">
-                        <h1><a href="#">Project 2</a></h1>
-                        <h2>Coding is Love</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget vehicula felis. Proin
-                            porta ullamcorper enim ac suscipit. Praesent libero magna, tempor sit amet justo semper,</p>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/img1.jpg" alt="img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End project Section -->
-
     <!-- about Section -->
     <section id="about">
 
@@ -161,7 +126,7 @@
             </div>
             <div class="col-left">
                 <div class="about-img">
-                    <img src="images/Screenshot (17).png" alt="img">
+                    <img src="images/Screenshot (17).jpg" alt="img">
                 </div>
             </div>
         </div>
@@ -205,6 +170,24 @@
         </div>
     </div>
     <!--End Contact Section -->
+<!-- social Icons -->
+    <navlist>
+        <ul>
+          <li><a href="https://www.facebook.com/manish.jangid.79230/">
+            <i class="fab fa-facebook-f"></i><span> Facebook</span>
+          </a></li>
+          <li><a href="https://github.com/jangidmanish007">
+            <i class="fab fa-github"></i><span> github</span>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/manish-jangid-348a501b2/">
+            <i class="fab fa-linkedin"></i><span> linkedin</span>
+          </a></li>
+          <li><a href="https://wa.me/919571411690">
+            <i class="fab fa-whatsapp"></i><span> whatsapp</span>
+          </a></li>
+        </ul>
+      </navlist>
+<!--End social Icons -->
     <!--Footer Section -->
     <div id="footer">
         <div class="footer container">
@@ -231,7 +214,13 @@
         </div>
     </div>
     <!--End Footer Section -->
-    <script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".about-img, .contect-item"), {
+            max: 12,
+            speed: 400
+        });
+
         const header = document.getElementById('header');
         const toggle = document.getElementById('toggle');
         const navbar = document.getElementById('navbar');
@@ -254,6 +243,7 @@
             const header = document.getElementById('header');
             header.classList.toggle('sticky', window.scrollY > 500);
         })
+
     </script>
 
 </body>
